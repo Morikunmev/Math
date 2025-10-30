@@ -1,0 +1,23 @@
+---
+title: "1-Preliminar"
+author: "25-04-2025-Lorenzo_Ricardo_Richard"
+date: "2025-10-18"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(engine.path = list(octave = "C:/Program Files/GNU Octave/Octave-10.3.0/mingw64/bin/octave-cli.exe"))
+```
+
+```{python}
+import numpy as np
+x= np.abs(-5)
+print(x)
+```
+```{octave}
+z1 = complex(1,2)
+class(z1)
+
+```
+
