@@ -1,0 +1,35 @@
+---
+title: "Python en R"
+author: "Richard"
+date: "2025-10-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{python}
+z1 = 4+3j
+z1
+z2 = complex(1,7)
+z2
+```
+```{python}
+type(z1)
+type(z2)
+z1.real
+z2.imag
+```
+```{python}
+z1.conjugate()
+z2.conjugate()
+```
+```{python}
+# Para obtener el modulo
+import cmath
+abs(z1)
+# Para obtener el argumento
+cmath.phase(z2)
+```
+

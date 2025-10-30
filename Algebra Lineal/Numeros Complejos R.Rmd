@@ -1,0 +1,50 @@
+---
+title: "Numeros Complejos con R"
+author: "Richard"
+date: "2025-10-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+z1 = 2+2i # Definimos el complejo en forma binomica
+z1
+```
+```{r}
+z2 = complex(real=2, imaginary=-1) #Definimos mediante parte real e imaginaria
+z2
+```
+```{r}
+z3=complex(modulus = 2, argument = pi) #Definimos mediante modulo y argumento
+z3
+```
+```{r}
+typeof(z1)
+typeof(z2)
+typeof(z3)
+Re(z1)
+Im(z3)
+```
+```{r}
+Conj(z1)
+Conj(z2)
+Conj(z3)
+```
+```{r}
+Mod(z2)
+Arg(z3)
+```
+```{r}
+# Operaciones basicas con numeros complejos se realizan del siguiente modo:
+z1+z2
+
+# Producto por un escalar
+3 * z3
+
+# Producto de numeros complejos
+z2*z3
+```
+
